@@ -1,118 +1,40 @@
-/*--------------------------------------------------------------
-Typography
---------------------------------------------------------------*/
+/* __________________________fonts_____________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;900&display=swap');
+/* ____________________________End________________________________ */
 
-body,
-button,
-input,
-select,
-textarea {
-	font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+/* ________________________Doc Styling____________________________ */
+* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, textarea {
+	font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
 }
 
 p {
 	margin-bottom: 1.5em;
 }
 
-b,
-strong {
-	font-weight: bold;
-}
-
-dfn,
-cite,
-em,
-i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code,
-kbd,
-tt,
-var {
-	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-
-abbr,
-acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-mark,
-ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-sup,
-sub {
-	font-size: 75%;
-	height: 0;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	bottom: 1ex;
-}
-
-sub {
-	top: .5ex;
-}
-
-small {
-	font-size: 75%;
-}
-
-big {
-	font-size: 125%;
-}
-
-/*--------------------------------------------------------------
-Layout
---------------------------------------------------------------*/
-body {
-    margin: 0;
-    padding: 0;
-}
-
+/* ___________________________Start Main______________________ */
 .masthead {
     padding: 1em 2em;
-    background-color: #0D1B2E;
+    background-color: #240d39;
     color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
 
 .masthead h1 {
@@ -122,14 +44,16 @@ body {
 .intro {
     padding: 2em 2em;
     color: #ffffff;
-    background: #429890;
+    background: #a83859;
+    font-family: 'Playfair Display', serif;
 }
 
-
-.intro p,
-.test-area {
+.intro p, .test-area {
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 60vw;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1.3rem;
 }
 
 .test-area {
@@ -142,10 +66,15 @@ body {
     border-radius: 10px;
 }
 
+::placeholder{
+    font-style: italic;
+}
+
 #origin-text {
     margin: 1em 0;
     padding: 1em 1em 0;
-    background-color: #ededed;
+    background-color: #b398ab;
+    font-size: 1.2rem;
 }
 
 #origin-text p {
@@ -176,14 +105,36 @@ body {
 
 #reset {
     padding: .5em 1em;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #E95D0F;
-    background: white ;
-    border: 10px solid #E95D0F;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #240d39;
+    box-shadow: 0 4px 8px 0 rgba(99, 96, 96, 0.2), 0 6px 20px 0 rgba(36, 34, 34, 0.19);
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    /* border: 10px solid #c8a6b5; */
+    outline: none;
 }
 
 #reset:hover {
-    color: white;
-    background-color: #E95D0F;
+    color: black;
+    background-color: #FAACA8;
+    transition: 1s ease;
 }
+
+/* __________________________End______________________________ */
+
+
+
+/* ___________________________Desktop_________________________ */
+@media only screen and min-width(768px){
+    
+}
+
+/* ___________________________End_____________________________ */
+
+
+/* ___________________________Tablets_________________________ */
+@media only screen and min-width(600px){
+
+}
+
+/* ___________________________End_____________________________ */
